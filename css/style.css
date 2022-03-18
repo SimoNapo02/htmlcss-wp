@@ -68,32 +68,76 @@ nav a{
 
 /* blue block */
 .blocco-alto {
-    background-color: rgb(0, 191, 255);
-    height: 50px;
+    min-height: 50px;
     margin-bottom: 10px;
 }
 
-.blue-box{
-    background-color: rgb(0, 17, 255);
-    height: 370px;
+.col-sx, .col-dx{
+    float:left;
+    width:20%;
+}
+.col{
+    min-height: 300px;
+    margin: 20px auto 40px auto;
+
 }
 
-.col-dx, .col-sx {
-    background-color: rgb(0, 191, 255);
-    float: left;
-    width: 20%;
-    min-height: 300px;
-}
-.col-centro {
-    background-color: rgb(0, 191, 255);
-    float: left;
-    width: calc(60% - 40px);
-    margin: auto 20px;
-    min-height: 300px;
+
+.col-sx{
+    margin-right: 10px;
+    
 }
 
+
+.img-col-sx{
+    background: url("../img/img-1.jpg");
+
+}
+
+.img-col-ctr{
+    background: url("../img/banner-2.jpg");
+
+}
+
+.img-col-dx{
+    background: url("../img/img-3.jpg");
+}
+
+.img-col-sx, .img-col-dx, .img-col-ctr{
+    background-repeat: no-repeat;
+    height: 230px;
+    background-position:  center ;
+    background-size: cover;
+   
+
+}
+
+.titolo-articolo{
+    margin:15px auto;
+    font-weight: 400;
+}
+
+.col-ctr{
+    float:left;
+    width: calc(60% - 20px);
+}
+
+.col-dx{
+    margin-left:10px;
+}
+
+.radius-border{
+    border-radius: 10px;
+}
 footer{
-    height: 75px;
-    background-color: purple;
-    margin-top: 5px;
+    height: 30px;
+    width: 100%;
+    margin-top:5px;
+    text-align: center;
+    color:black;
+}
+
+footer span:last-child{
+    color:red;
+    font-size: 20px;
 }
