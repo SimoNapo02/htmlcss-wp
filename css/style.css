@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 .container{
     width: 1280px;
@@ -36,18 +41,30 @@ nav a{
     min-height: 75px;
     margin-bottom: 10px;
 }
-
+/* box grande 1 */
 .yellow-box{
-    height: 250px;
-    background-color: yellow;
-    margin-bottom: 10px;
+    position: relative;
+    background: url("../img/banner.jpg");
+    background-position: center center;
+    height: 450px;
+    margin-bottom: 30px;
 }
+.testo-box{
+    padding-right: calc(100% - 880px);
+    color:white;
+    position: absolute;
+    top:80%;
+    left:15%;
+    transform: translate(-15%,-80%);
+}
+
+    .sfondo-nero{
+        height: 100%;
+        width: 100%;
+        background: rgba(0,0,0,20%);
+    }
 /* main */
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-}
+
 
 /* blue block */
 .blocco-alto {
